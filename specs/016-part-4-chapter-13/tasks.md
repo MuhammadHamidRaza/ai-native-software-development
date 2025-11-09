@@ -523,7 +523,7 @@ This task checklist breaks down Chapter 13 implementation into atomic, testable,
 
 - [ ] Code examples integrated throughout (not separate section)
 - [ ] Reading level: Grade 7-8
-- [ ] Cognitive load: 6 concepts (variable, primitive types, type hints, naming, collection awareness, type validation)
+- [ ] Cognitive load: 7 concepts (variable, primitive types, type hints, naming conventions, invalid variable names and error messages, collection awareness, type validation)
 - [ ] CEFR level: A2 (simple application with scaffolding)
 - [ ] No gatekeeping language
 
