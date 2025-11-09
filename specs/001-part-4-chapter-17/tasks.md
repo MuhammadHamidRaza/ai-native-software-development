@@ -20,10 +20,10 @@
 
 **Purpose**: Create chapter structure and shared resources
 
-- [ ] T001 Create chapter directory: `book-source/docs/04-Part-4-Python-Fundamentals/17-control-flow-loops/`
-- [ ] T002 Create README.md with chapter overview, learning outcomes, prerequisites, time estimate (4-5 hours), lesson TOC
-- [ ] T003 [P] Verify prerequisites: Chapters 13-16 status (Ch 15-16 currently "Planned" - may need quick review sections)
-- [ ] T004 [P] Set up Python 3.14 testing environment for code examples
+- [X] T001 Create chapter directory: `book-source/docs/04-Part-4-Python-Fundamentals/17-control-flow-loops/`
+- [X] T002 Create README.md with chapter overview, learning outcomes, prerequisites, time estimate (4-5 hours), lesson TOC
+- [X] T003 [P] Verify prerequisites: Chapters 13-16 status (Ch 15-16 currently "Planned" - may need quick review sections)
+- [X] T004 [P] Set up Python 3.14 testing environment for code examples
 
 ---
 
@@ -33,11 +33,11 @@
 
 **⚠️ CRITICAL**: No lesson writing can begin until this phase is complete
 
-- [ ] T005 Document "Try With AI" format standard: 4 prompts per lesson (Recall → Understand → Apply → Analyze/Evaluate/Synthesize)
-- [ ] T006 Document CoLearning elements format: 💬 AI Colearning Prompt, 🎓 Instructor Commentary, 🚀 CoLearning Challenge, ✨ Teaching Tip
-- [ ] T007 Document lesson closure requirement: ONLY "Try With AI" section (no "Key Takeaways", "Summary", or "What's Next")
-- [ ] T008 Document Graduated Teaching Pattern labels: Tier 1 (Book Teaches), Tier 2 (AI Companion)
-- [ ] T009 Create shared code testing checklist: Python 3.14+, type hints, inline comments, copy-pasteable, expected output
+- [X] T005 Document "Try With AI" format standard: 4 prompts per lesson (Recall → Understand → Apply → Analyze/Evaluate/Synthesize)
+- [X] T006 Document CoLearning elements format: 💬 AI Colearning Prompt, 🎓 Instructor Commentary, 🚀 CoLearning Challenge, ✨ Teaching Tip
+- [X] T007 Document lesson closure requirement: ONLY "Try With AI" section (no "Key Takeaways", "Summary", or "What's Next")
+- [X] T008 Document Graduated Teaching Pattern labels: Tier 1 (Book Teaches), Tier 2 (AI Companion)
+- [X] T009 Create shared code testing checklist: Python 3.14+, type hints, inline comments, copy-pasteable, expected output
 
 **Checkpoint**: Foundation ready - lesson implementation can now begin in parallel
 
@@ -55,21 +55,21 @@
 
 ### Implementation for Lesson 1
 
-- [ ] T010 [L1] Create lesson file: `17-control-flow-loops/01-making-decisions-with-conditionals.md`
-- [ ] T011 [L1] Write YAML frontmatter: sidebar_position=1, title, description, reading_level, time_estimate=45-60min
-- [ ] T012 [L1] Write quick review section: Comparison operators (Ch 15 callback - 1-2 examples, max 5 min reading time)
-- [ ] T013 [L1] Write quick review section: Logical operators (and/or/not - 1-2 examples, max 5 min reading time)
-- [ ] T014 [L1] Write main content: if statement (single condition) with age verification example (Tier 1 - Book Teaches)
-- [ ] T015 [L1] Write main content: if-else (binary decision) with even/odd checker example (Tier 1 - Book Teaches)
-- [ ] T016 [L1] Write main content: if-elif-else (multiple conditions) with grade classifier example (Tier 1 - Book Teaches)
-- [ ] T017 [L1] Write AI Companion section: Complex conditions with and/or (discount eligibility example - Tier 2)
-- [ ] T018 [L1] Write AI Companion section: Nested if (multi-criteria validation example - Tier 2)
-- [ ] T019 [L1] Write Red Flags section: IndentationError, unreachable code, logical errors, type mismatches (with AI troubleshooting prompts)
-- [ ] T020 [L1] Write "Try With AI" section with 4 prompts: Recall (if vs elif), Understand (trace execution), Apply (generate code), Analyze (edge cases)
-- [ ] T021 [L1] Test all 5 code examples on Python 3.14 with type hints
-- [ ] T022 [L1] Validate lesson closure: ONLY "Try With AI" section (no other closing sections)
-- [ ] T023 [L1] Validate cognitive load: 7 concepts max (if, else, elif, comparison operators review, logical operators review, boolean expressions, indentation)
-- [ ] T024 [L1] Validate reading level: Grade 7-9 (Flesch-Kincaid)
+- [X] T010 [L1] Create lesson file: `17-control-flow-loops/01-making-decisions-with-conditionals.md`
+- [X] T011 [L1] Write YAML frontmatter: sidebar_position=1, title, description, reading_level, time_estimate=45-60min
+- [X] T012 [L1] Write quick review section: Comparison operators (Ch 15 callback - 1-2 examples, max 5 min reading time)
+- [X] T013 [L1] Write quick review section: Logical operators (and/or/not - 1-2 examples, max 5 min reading time)
+- [X] T014 [L1] Write main content: if statement (single condition) with age verification example (Tier 1 - Book Teaches)
+- [X] T015 [L1] Write main content: if-else (binary decision) with even/odd checker example (Tier 1 - Book Teaches)
+- [X] T016 [L1] Write main content: if-elif-else (multiple conditions) with grade classifier example (Tier 1 - Book Teaches)
+- [X] T017 [L1] Write AI Companion section: Complex conditions with and/or (discount eligibility example - Tier 2)
+- [X] T018 [L1] Write AI Companion section: Nested if (multi-criteria validation example - Tier 2)
+- [X] T019 [L1] Write Red Flags section: IndentationError, unreachable code, logical errors, type mismatches (with AI troubleshooting prompts)
+- [X] T020 [L1] Write "Try With AI" section with 4 prompts: Recall (if vs elif), Understand (trace execution), Apply (generate code), Analyze (edge cases)
+- [X] T021 [L1] Test all 5 code examples on Python 3.14 with type hints
+- [X] T022 [L1] Validate lesson closure: ONLY "Try With AI" section (no other closing sections)
+- [X] T023 [L1] Validate cognitive load: 7 concepts max (if, else, elif, comparison operators review, logical operators review, boolean expressions, indentation)
+- [X] T024 [L1] Validate reading level: Grade 7-9 (Flesch-Kincaid)
 
 **Checkpoint**: Lesson 1 should be complete, tested, and independently readable
 
@@ -121,7 +121,7 @@
 
 ### Implementation for Lesson 3
 
-- [ ] T040 [P] [L3] Create lesson file: `17-control-flow-loops/03-repetition-with-loops.md`
+- [X] T040 [P] [L3] Create lesson file: `17-control-flow-loops/03-repetition-with-loops.md`
 - [ ] T041 [L3] Write YAML frontmatter: sidebar_position=3, title, description, reading_level, time_estimate=55-70min
 - [ ] T042 [L3] Write motivation section: Why automate repetition? (real-world scenarios)
 - [ ] T043 [L3] Write main content: for loop with range() (definite iteration) with print 1-10 example (Tier 1 - Book Teaches)
@@ -153,7 +153,7 @@
 
 ### Implementation for Lesson 4
 
-- [ ] T055 [P] [L4] Create lesson file: `17-control-flow-loops/04-controlling-loops.md`
+- [X] T055 [P] [L4] Create lesson file: `17-control-flow-loops/04-controlling-loops.md`
 - [ ] T056 [L4] Write YAML frontmatter: sidebar_position=4, title, description, reading_level, time_estimate=55-70min
 - [ ] T057 [L4] Write motivation section: Early exit, skipping, retry scenarios (when loop control is needed)
 - [ ] T058 [L4] Write main content: break statement (early exit) with search for number example (Tier 1 - Book Teaches)
@@ -186,7 +186,7 @@
 
 ### Implementation for Lesson 5
 
-- [ ] T070 [P] [L5] Create lesson file: `17-control-flow-loops/05-nested-control-structures.md`
+- [X] T070 [P] [L5] Create lesson file: `17-control-flow-loops/05-nested-control-structures.md`
 - [ ] T071 [L5] Write YAML frontmatter: sidebar_position=5, title, description, reading_level, time_estimate=60-75min
 - [ ] T072 [L5] Write integration review section: Callback to Lessons 1-4 concepts (quick summary, max 8 min reading time)
 - [ ] T073 [L5] Write main content: Nested if statements (decision trees) with multi-criteria eligibility example (Tier 1 - Book Teaches)
