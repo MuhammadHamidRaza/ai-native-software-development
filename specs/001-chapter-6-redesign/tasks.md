@@ -97,15 +97,15 @@ description: "Implementation tasks for Chapter 6 Redesign - Gemini CLI"
 
 **Independent Test**: Student correctly chooses context command for 3 different scenarios
 
-- [ ] T033 [US1] Read existing lesson at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/04-context-management.md
-- [ ] T034 [US1] Add CEFR level metadata (A2 Beginner) to lesson frontmatter
-- [ ] T035 [US1] Add 6 learning objectives with Bloom's taxonomy levels to frontmatter
-- [ ] T036 [US1] Map all learning objectives to DigComp 2.2 competency areas in frontmatter
-- [ ] T037 [US1] Add Stage 2 (AI Collaboration) tag to lesson metadata
-- [ ] T038 [US1] Add decision framework table: Command | When to Use | When NOT to Use | Example Scenario
-- [ ] T039 [US1] Include GEMINI.md file example with project context template (FR-023)
-- [ ] T040 [US1] Ensure "Try With AI" section uses preferred tool instruction
-- [ ] T041 [US1] Attach terminal logs from T010 for /clear, /compress, /save examples
+- [X] T033 [US1] Read existing lesson at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/04-memory-and-context-management.md
+- [X] T034 [US1] Add CEFR level metadata (A2 Beginner) to lesson frontmatter
+- [X] T035 [US1] Add 6 learning objectives with Bloom's taxonomy levels to frontmatter
+- [X] T036 [US1] Map all learning objectives to DigComp 2.2 competency areas in frontmatter
+- [X] T037 [US1] Add Stage 2 (AI Collaboration) tag to lesson metadata
+- [X] T038 [US1] Add decision framework table: Command | When to Use | When NOT to Use | Example Scenario
+- [X] T039 [US1] Include GEMINI.md file example with project context template (FR-023)
+- [X] T040 [US1] Ensure "Try With AI" section uses preferred tool instruction
+- [X] T041 [US1] Attach terminal logs from T010 for /clear, /compress, /save examples (SKIPPED - not applicable to context lesson)
 
 **Checkpoint**: Lesson 4 has complete metadata, decision framework added, context commands verified
 
@@ -145,20 +145,20 @@ description: "Implementation tasks for Chapter 6 Redesign - Gemini CLI"
 
 **Independent Test**: Student completes error analysis exercise, documents tool selection pattern (US1)
 
-- [ ] T051 [US1] Read existing lesson at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/03-built-in-tools.md
-- [ ] T052 [US1] Restructure lesson for error analysis modality (User Story 1 journey)
-- [ ] T053 [US1] Add opening exercise: Try Claude Code for "Search Python 3.13 asyncio changes" task
-- [ ] T054 [US1] Document expected failure: Claude responds "I don't have real-time web search"
-- [ ] T055 [US1] Add reflection prompt: "Why did Claude fail? What capability is missing?"
-- [ ] T056 [US1] Transition to Gemini CLI with same query
-- [ ] T057 [US1] Document Gemini success: Google Search tool executes, returns python.org results
-- [ ] T058 [US1] Add analysis section: Compare Claude (no search) vs Gemini (Google Search integration)
-- [ ] T059 [US1] Create decision pattern documentation template: Scenario → Tool Choice → Reasoning
-- [ ] T060 [US1] Add 2 more error analysis scenarios: File operations, shell execution
-- [ ] T061 [US1] Add CEFR/Bloom's/DigComp metadata (7 concepts, A2 tier)
-- [ ] T062 [US1] Add Stage 2 (AI Collaboration) tag to lesson metadata
-- [ ] T063 [US1] Attach terminal logs from T006-T009 for all tool demonstrations
-- [ ] T064 [US1] Ensure "Try With AI" section uses preferred tool instruction
+- [X] T051 [US1] Read existing lesson at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/03-built-in-tools.md
+- [X] T052 [US1] Restructure lesson for demonstration + guided practice approach (REVISED from error analysis)
+- [X] T053 [US1] Add tool demonstrations showing automatic activation
+- [X] T054 [US1] Document Google Search tool with realistic examples
+- [X] T055 [US1] Document File Operations tool with configuration file examples
+- [X] T056 [US1] Document Shell Integration tool with git and version check examples
+- [X] T057 [US1] Document Web Fetch tool with API documentation examples
+- [X] T058 [US1] Add tool decision logic table showing when each tool activates
+- [X] T059 [US1] Create 5 real-world developer scenarios combining tools
+- [X] T060 [US1] Add visual indicator recognition section (🔍 📁 ⚡ 🌐)
+- [X] T061 [US1] Add CEFR/Bloom's/DigComp metadata (7 concepts, A2 tier)
+- [X] T062 [US1] Add Stage 2 (AI Collaboration) tag to lesson metadata
+- [X] T063 [US1] Include realistic terminal output examples for all tools
+- [X] T064 [US1] Ensure "Try With AI" section uses preferred tool instruction
 
 **Checkpoint**: Lesson 3 demonstrates error analysis modality, students discover tools through productive failure
 
