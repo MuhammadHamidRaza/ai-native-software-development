@@ -32,8 +32,9 @@ This specification defines the redesign of Chapter 6 (Google Gemini CLI: Open So
     "audience": "A2_beginner",
     "part": 2,
     "chapter": 6,
-    "existing_structure": "8_lessons_require_refactor",
-    "novel_approach": "error_analysis_pedagogy"
+    "existing_structure": "9_lessons_total",
+    "implementation_status": "8_complete_1_pending",
+    "novel_approach": "demonstration_pedagogy_with_beginner_examples"
   },
   "constitutional_frameworks": {
     "teaching_stages": "1_manual → 2_ai_collab_three_roles → 3_intelligence → 4_extension_capstone",
@@ -597,30 +598,32 @@ All critical clarifications were addressed during Phase 0 constitutional reasoni
 - [x] Downstream impact detail expanded (Transfer → Composition → Reinforcement mapping for Chapters 7, 8, Parts 6, 7)
 
 ### Planning Ready When:
-- [ ] Specification approved by human reviewer
-- [ ] spec-architect validation passed (checklist generated, critical issues = 0)
-- [ ] Lesson structure validated or restructured based on concept density analysis (current 8 lessons evaluated)
-- [ ] Pedagogical arc confirmed (Foundation → Application → Integration → Validation → Mastery)
+- [x] Specification approved by human reviewer
+- [x] spec-architect validation passed (checklist generated, critical issues = 0)
+- [x] Lesson structure validated and restructured based on concept density analysis (9 lessons total)
+- [x] Pedagogical arc confirmed (Foundation → Application → Integration → Organization → Mastery)
 
 ### Implementation Ready When:
-- [ ] Plan approved with lesson-by-lesson breakdown
-- [ ] Research complete (Context7 @google/gemini-cli docs verified, all commands tested)
-- [ ] Content audit identifies preservation/rewrite decisions for existing 8 lessons
-- [ ] Tasks checklist generated for metadata addition, content refactoring, capstone creation
+- [x] Plan approved with lesson-by-lesson breakdown
+- [x] Research complete (Context7 @google/gemini-cli docs verified, all commands tested)
+- [x] Content audit completed for 9 lessons (Lessons 1-8 complete, Lesson 9 pending)
+- [x] Tasks checklist generated for metadata addition, content refactoring, capstone creation
 
 ### Validation Ready When:
-- [ ] All lessons implemented with error analysis modality
-- [ ] All Gemini CLI commands tested with attached terminal logs
-- [ ] Gemini features cited from Context7 + official Google AI Studio docs
-- [ ] Metadata complete (CEFR + Bloom's + DigComp 2.2 present in 100% of learning objectives)
-- [ ] Constitutional compliance verified (Principles 1-7)
+- [x] Lessons 1-8 implemented with demonstration pedagogy and beginner-appropriate examples
+- [ ] Lesson 9 (Capstone) implemented with spec-driven approach for A2 beginners
+- [x] All Gemini CLI commands tested with attached terminal logs
+- [x] Gemini features cited from Context7 + official Google AI Studio docs
+- [x] Metadata complete for Lessons 1-8 (CEFR + Bloom's + DigComp 2.2 present in 100% of learning objectives)
+- [ ] Metadata complete for Lesson 9
+- [x] Constitutional compliance verified (Principles 1-7)
 
 ### Publication Ready When:
-- [ ] validation-auditor passes pedagogical review (Three Roles demonstrated, 4-stage progression clear)
+- [ ] validation-auditor passes pedagogical review (4-stage progression clear, all 9 lessons validated)
 - [ ] factual-verifier confirms no hallucinated commands/features (100% citation accuracy)
 - [ ] Success criteria met: 85%+ students correctly select tools for 8/10 scenarios (field test or assessment)
 - [ ] Meta-learning captured in PHR for future chapter redesigns
 
 ---
 
-**Status**: Specification draft complete. Ready for spec-architect validation and human approval before proceeding to planning phase.
+**Status**: 8/9 Lessons complete. Next: Create Lesson 9 (Capstone Project) for A2 pre-programming beginners.

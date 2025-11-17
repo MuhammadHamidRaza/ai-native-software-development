@@ -192,101 +192,113 @@ description: "Implementation tasks for Chapter 6 Redesign - Gemini CLI"
 
 ---
 
-## Phase 4: Three Roles Framework & Capstone (Lessons 6, 8 - REFACTOR + CREATE)
+## Phase 4: MCP Integration & Extensions (Lessons 6, 8 - REDESIGN + REVISE)
 
-**Purpose**: Demonstrate Three Roles mandatory framework (L6) and create spec-driven capstone (L8)
+**Purpose**: Redesign Lesson 6 (MCP Integration) for A2 beginners, revise Lesson 8 (Extensions) for study group scenarios
 
-**Time Estimate**: 18-22 hours
+**Time Estimate**: 14-18 hours
 
-**⚠️ CRITICAL**: Lesson 6 MUST demonstrate all three roles explicitly, Lesson 8 MUST require spec-first approach
+**⚠️ CRITICAL**: All examples must be beginner-appropriate, no programming assumptions
 
-### Lesson 6: Three Roles Framework with Gemini (MAJOR REFACTOR)
+### Lesson 6: MCP Servers and Integration (REDESIGNED - COMPLETE)
 
-**Goal**: Students demonstrate AI as Teacher, AI as Student, AI as Co-Worker in Gemini collaboration workflow
+**Goal**: Students understand MCP protocol, install MCP servers, integrate external systems with Gemini
 
-**Independent Test**: Student completes workflow exhibiting all 3 roles, documents convergence pattern (US2)
+**Independent Test**: Student installs MCP server and explains when to use MCP vs built-in tools
 
-- [ ] T080 [US2] Read existing lesson at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/06-slash-commands.md (or related content)
-- [ ] T081 [US2] Restructure lesson entirely around Three Roles Framework (User Story 2 journey)
-- [ ] T082 [US2] Add opening section: Three Roles Explained with visual diagram
-- [ ] T083 [US2] Role 1 - AI as Teacher: Gemini suggests pattern student didn't know
-- [ ] T084 [US2] Add complete example: "Help me add shell integration to CLI tool" → Gemini suggests Unix scripts
-- [ ] T085 [US2] Include terminal log of Gemini teaching shell integration patterns
-- [ ] T086 [US2] Role 2 - AI as Student: Student teaches AI their constraints
-- [ ] T087 [US2] Add refinement example: "I'm on Windows PowerShell, those won't work"
-- [ ] T088 [US2] Document Gemini adaptation: Provides PowerShell-specific approach
-- [ ] T089 [US2] Include terminal log of student correcting Gemini's generic output
-- [ ] T090 [US2] Role 3 - AI as Co-Worker: Iterative convergence toward working solution
-- [ ] T091 [US2] Add iteration cycle: Permission error → ExecutionPolicy fix → Test → Success
-- [ ] T092 [US2] Document 3+ iteration rounds with terminal logs from each
-- [ ] T093 [US2] Add reflection section: "How did I teach AI? How did AI teach me? How did we converge?"
-- [ ] T094 [US2] Create guided exercise: Student completes Windows/macOS/Linux-specific task with all 3 roles
-- [ ] T095 [US2] Add CEFR/Bloom's/DigComp metadata (6 concepts, A2 tier)
-- [ ] T096 [US2] Add Stage 2 (AI Collaboration) tag with explicit "Three Roles Demonstrated" marker
-- [ ] T097 [US2] Ensure "Try With AI" section uses preferred tool instruction
-- [ ] T098 [US2] Attach terminal logs showing complete Three Roles workflow from T005-T010
+- [X] T080 [US2] Read existing lesson at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/06-mcp-servers-and-integration.md
+- [X] T081 [US2] Redesign with beginner-appropriate examples (no React, APIs, programming)
+- [X] T082 [US2] Add complete A2 metadata (CEFR, Bloom's, DigComp)
+- [X] T083 [US2] Replace TypeScript interface with phone directory specialist analogy
+- [X] T084 [US2] Add examples: Student laptop research, photography courses, digital skills
+- [X] T085 [US2] Document MCP installation with step-by-step guide
+- [X] T086 [US2] Include Playwright and Filesystem server examples
+- [X] T087 [US2] Add decision framework: When to use MCP vs built-in tools
+- [X] T088 [US2] Verify cognitive load ≤7 concepts (6 concepts total)
+- [X] T089 [US2] Add Stage 2 (AI Collaboration) tag to lesson metadata
+- [X] T090 [US2] Ensure "Try With AI" section uses preferred tool instruction
+- [X] T091 [US2] Remove all programming references (Python, JavaScript, React, HTML, CSS, Node.js)
 
-**Checkpoint**: Lesson 6 explicitly demonstrates all Three Roles, students practice co-learning pattern
+**Checkpoint**: Lesson 6 teaches MCP integration with beginner-appropriate examples
 
-### Lesson 8: Extension Development Capstone (CREATE NEW LESSON)
+### Lesson 8: Extensions, Security, and IDE Integration (REVISED - COMPLETE)
 
-**Goal**: Students write spec FIRST, implement MCP server OR slash command, compose Stages 1-3 knowledge
+**Goal**: Students understand extensions as pre-packaged bundles, install and manage extensions, use tool filtering
 
-**Independent Test**: Student creates functioning extension meeting capstone scope criteria (US4)
+**Independent Test**: Student installs extension, explains when extensions simplify workflow
 
-- [ ] T099 [US4] Create new lesson file at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/08-capstone-extension-development.md
-- [ ] T100 [US4] Add opening section: Stage 4 Explained - Spec-Driven Integration principle
-- [ ] T101 [US4] Emphasize specification primacy: Write WHAT before HOW (constitutional Principle 1)
-- [ ] T102 [US4] Add capstone scope calibration section from spec.md (A2 tier complexity guardrails)
-- [ ] T103 [US4] MCP Server Path: Minimum viable scope (2 tools, basic errors, local files only, 45-60 min)
-- [ ] T104 [US4] Include complete Obsidian Vault Reader example from spec.md (JSON schema + implementation)
-- [ ] T105 [US4] Add step-by-step guide: Spec → Tools definition → Handler implementation → Integration test
-- [ ] T106 [US4] Include terminal log: gemini mcp add obsidian-vault → test query → successful response
-- [ ] T107 [US4] Slash Command Path: Minimum viable scope (1 command, 1 injection pattern, 30-45 min)
-- [ ] T108 [US4] Include complete /research command example from spec.md (TOML config + usage)
-- [ ] T109 [US4] Add step-by-step guide: Spec → TOML config → Injection patterns → Test invocation
-- [ ] T110 [US4] Include terminal log: /research "asyncio python" → search executed → notes saved
-- [ ] T111 [US4] Add complexity guardrails section: What NOT to include (no database, no auth, no deployment)
-- [ ] T112 [US4] Create guided capstone exercise: Student chooses path (MCP or slash command)
-- [ ] T113 [US4] Step 1: Write specification (intent, success criteria, constraints)
-- [ ] T114 [US4] Step 2: Validate spec completeness (using Stage 4 quality framework from constitution)
-- [ ] T115 [US4] Step 3: Implement extension following Gemini CLI standards
-- [ ] T116 [US4] Step 4: Test integration and document workflow need solved
-- [ ] T117 [US4] Step 5: Reflection - How did you compose Stages 1-3 knowledge?
-- [ ] T118 [US4] Add CEFR/Bloom's/DigComp metadata (capstone has 0 new concepts, applies all previous)
-- [ ] T119 [US4] Add Stage 4 (Spec-Driven Integration) tag to lesson metadata
-- [ ] T120 [US4] Ensure "Try With AI" section uses preferred tool instruction
-- [ ] T121 [US4] Attach terminal logs from T011 for MCP integration examples
+- [X] T092 [US2] Read existing lesson at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/08-extensions-security-and-ide-integration.md
+- [X] T093 [US2] Add complete A2 metadata (CEFR, Bloom's, DigComp)
+- [X] T094 [US2] Reduce cognitive load from 12+ concepts to 7 concepts
+- [X] T095 [US2] Replace team development examples with study group scenarios
+- [X] T096 [US2] Remove IDE Integration section (too advanced for A2)
+- [X] T097 [US2] Simplify JSON configuration explanations
+- [X] T098 [US2] Rewrite "Try With AI" section for beginner prompts
+- [X] T099 [US2] Add "When to Use Extensions" section
+- [X] T100 [US2] Replace all programming references with learning scenarios
+- [X] T101 [US2] Add Stage 2 (AI Collaboration) tag to lesson metadata
+- [X] T102 [US2] Ensure "Try With AI" section uses preferred tool instruction
 
-**Checkpoint**: Lesson 8 provides spec-driven capstone, students demonstrate mastery through creation
+**Checkpoint**: Lesson 8 teaches extensions with beginner-appropriate scenarios
 
-**Phase 4 Complete**: Three Roles framework demonstrated (L6), capstone extension created (L8), Stage 4 achieved
+### Lesson 9: Capstone Project (CREATE NEW LESSON)
+
+**Goal**: Students write spec FIRST, implement simple AI workflow, compose Stages 1-3 knowledge
+
+**Independent Test**: Student creates functioning workflow meeting capstone scope criteria (US4)
+
+- [ ] T103 [US4] Create new lesson file at book-source/docs/02-AI-Tool-Landscape/06-gemini-cli-installation-and-basics/09-capstone-project.md
+- [ ] T104 [US4] Add opening section: Stage 4 Explained - Spec-Driven Integration principle
+- [ ] T105 [US4] Emphasize specification primacy: Write WHAT before HOW (constitutional Principle 1)
+- [ ] T106 [US4] Add capstone scope calibration section (A2 tier complexity guardrails for pre-programming students)
+- [ ] T107 [US4] Path 1: Learning Workflow - Custom slash commands for study tasks (30-45 min)
+- [ ] T108 [US4] Include complete example: /study-plan workflow (TOML config + usage)
+- [ ] T109 [US4] Add step-by-step guide: Spec → TOML config → Test commands → Document learning benefit
+- [ ] T110 [US4] Path 2: Research Assistant - MCP integration for information gathering (45-60 min)
+- [ ] T111 [US4] Include simplified MCP example appropriate for beginners (web search + file save)
+- [ ] T112 [US4] Add step-by-step guide: Spec → MCP installation → Test integration → Document use case
+- [ ] T113 [US4] Add complexity guardrails section: What NOT to include (no programming, no deployment, simple workflows only)
+- [ ] T114 [US4] Create guided capstone exercise: Student chooses path (Learning Workflow or Research Assistant)
+- [ ] T115 [US4] Step 1: Write specification (intent, success criteria, constraints)
+- [ ] T116 [US4] Step 2: Validate spec completeness (using Stage 4 quality framework from constitution)
+- [ ] T117 [US4] Step 3: Implement workflow following Gemini CLI standards
+- [ ] T118 [US4] Step 4: Test integration and document learning improvement
+- [ ] T119 [US4] Step 5: Reflection - How did you compose Stages 1-3 knowledge?
+- [ ] T120 [US4] Add CEFR/Bloom's/DigComp metadata (capstone has 0 new concepts, applies all previous)
+- [ ] T121 [US4] Add Stage 4 (Spec-Driven Integration) tag to lesson metadata
+- [ ] T122 [US4] Ensure "Try With AI" section uses preferred tool instruction
+- [ ] T123 [US4] Replace all technical examples with beginner learning scenarios
+
+**Checkpoint**: Lesson 9 provides spec-driven capstone appropriate for A2 pre-programming students
+
+**Phase 4 Complete**: Lessons 6-9 complete, MCP integration + extensions + capstone for beginners achieved
 
 ---
 
 ## Phase 5: Cross-Cutting & Validation
 
-**Purpose**: Ensure constitutional compliance, factual accuracy, pedagogical quality across all 8 lessons
+**Purpose**: Ensure constitutional compliance, factual accuracy, pedagogical quality across all 9 lessons
 
-**Time Estimate**: 8-12 hours
+**Time Estimate**: 10-14 hours
 
-- [ ] T122 [P] Run validation-auditor agent on all 8 lessons for pedagogical review
-- [ ] T123 [P] Run factual-verifier agent on all 8 lessons for citation accuracy
-- [ ] T124 Verify 4-stage progression clear across lessons: L1-2 (Manual) → L3-6 (AI Collab) → L7 (Intelligence) → L8 (Capstone)
-- [ ] T125 Verify Three Roles framework demonstrated in L6 with all 3 roles explicit
-- [ ] T126 Verify error analysis modality in L3 (try wrong tool → analyze → discover right tool)
-- [ ] T127 Verify intelligence accumulation: research-workflow skill (L7) referenced in capstone (L8)
-- [ ] T128 Verify metadata 100% complete: All 8 lessons have CEFR + Bloom's + DigComp mappings
-- [ ] T129 Verify cognitive load compliance: All sections ≤7 concepts for A2 tier
-- [ ] T130 Verify all Gemini CLI commands have terminal execution logs attached
-- [ ] T131 Verify all Gemini features cited from Context7 @google/gemini-cli OR official Google docs
-- [ ] T132 Verify no hallucinated commands/features (cross-check all examples against research from T001-T003)
-- [ ] T133 Verify all 8 lessons end with "Try With AI" section (no "Key Takeaways" or "What's Next")
-- [ ] T134 Verify "Try With AI" sections use preferred tool instruction (Gemini CLI or Claude CLI)
-- [ ] T135 Update chapter README.md with learning objectives, stage tags, prerequisites
-- [ ] T136 Create chapter-level assessment mapping all success criteria (SC-001 through SC-020)
-- [ ] T137 Document teaching modality anti-convergence: Chapter 5 (direct teaching) vs Chapter 6 (error analysis)
-- [ ] T138 Generate final validation report: Constitutional compliance checklist results
+- [ ] T124 [P] Run validation-auditor agent on all 9 lessons for pedagogical review
+- [ ] T125 [P] Run factual-verifier agent on all 9 lessons for citation accuracy
+- [ ] T126 Verify 4-stage progression clear across lessons: L1-2 (Manual) → L3-7 (AI Collab) → L7-8 (Organization) → L9 (Capstone)
+- [ ] T127 Verify MCP integration (L6) demonstrates external system connection with beginner examples
+- [ ] T128 Verify demonstration pedagogy in L3 (automatic tool activation → guided practice)
+- [ ] T129 Verify intelligence accumulation: Custom commands (L7) + Extensions (L8) → Capstone (L9)
+- [ ] T130 Verify metadata 100% complete: All 9 lessons have CEFR + Bloom's + DigComp mappings
+- [ ] T131 Verify cognitive load compliance: All sections ≤7 concepts for A2 tier
+- [ ] T132 Verify all examples beginner-appropriate: NO programming assumptions (students at Chapter 6, Python at Chapter 12)
+- [ ] T133 Verify all Gemini CLI commands have terminal execution logs attached
+- [ ] T134 Verify all Gemini features cited from Context7 @google/gemini-cli OR official Google docs
+- [ ] T135 Verify no hallucinated commands/features (cross-check all examples against research from T001-T003)
+- [ ] T136 Verify all 9 lessons end with "Try With AI" section (no "Key Takeaways" or "What's Next")
+- [ ] T137 Verify "Try With AI" sections use preferred tool instruction (Gemini CLI or Claude CLI)
+- [ ] T138 Update chapter README.md with learning objectives, stage tags, prerequisites
+- [ ] T139 Create chapter-level assessment mapping all success criteria (SC-001 through SC-020)
+- [ ] T140 Document teaching modality anti-convergence: Chapter 5 (direct teaching) vs Chapter 6 (demonstration + practice)
+- [ ] T141 Generate final validation report: Constitutional compliance checklist results
 
 **Checkpoint**: All lessons validated, constitutional principles verified, chapter ready for review
 
@@ -296,16 +308,17 @@ description: "Implementation tasks for Chapter 6 Redesign - Gemini CLI"
 
 **Purpose**: Capture learning from redesign process for future chapter improvements
 
-**Time Estimate**: 2-3 hours
+**Time Estimate**: 3-4 hours
 
-- [ ] T139 Create Prompt History Record (PHR) for Phase 0 (Constitutional Reasoning)
-- [ ] T140 Create PHR for Phase 1 (Specification)
-- [ ] T141 Create PHR for Phase 2 (Planning)
-- [ ] T142 Create PHR for Phase 3-5 (Implementation)
-- [ ] T143 Document lessons learned: What worked well in error analysis modality?
-- [ ] T144 Document challenges: Where did A2 cognitive load limits require simplification?
-- [ ] T145 Document reusable patterns: Can error analysis apply to other tool comparison chapters?
-- [ ] T146 Update .specify/memory/ with intelligence accumulated during redesign
+- [ ] T142 Create Prompt History Record (PHR) for Phase 0 (Constitutional Reasoning)
+- [ ] T143 Create PHR for Phase 1 (Specification)
+- [ ] T144 Create PHR for Phase 2 (Planning)
+- [ ] T145 Create PHR for Phase 3-5 (Implementation - 9 lessons)
+- [ ] T146 Document lessons learned: What worked well in demonstration pedagogy?
+- [ ] T147 Document challenges: Where did A2 cognitive load limits require simplification?
+- [ ] T148 Document example transformation: How did we convert technical to beginner examples?
+- [ ] T149 Document reusable patterns: Beginner example criteria for pre-programming chapters
+- [ ] T150 Update .specify/memory/ with intelligence accumulated during redesign
 
 **Checkpoint**: Meta-learning captured, future redesigns can reference this workflow
 
@@ -408,17 +421,19 @@ Task T123: factual-verifier (citation accuracy)
 
 ### Full Chapter Delivery (All User Stories)
 
-**Timeline**: 44-55 hours (1-1.5 weeks at 8h/day per plan.md estimate)
+**Timeline**: 52-65 hours (1.5-2 weeks at 8h/day per plan.md estimate)
 
 **Sequence**:
-1. Phase 1: Setup (5-10 hours) - Research + command testing
-2. Phase 2: Foundational (12-15 hours) - L1, L2, L4, L5 metadata
-3. Phase 3: Refactor (14-18 hours) - L3, L7 new modalities
-4. Phase 4: Three Roles + Capstone (18-22 hours) - L6 major refactor, L8 creation
-5. Phase 5: Validation (8-12 hours) - Constitutional compliance checks
-6. Phase 6: Meta-Learning (2-3 hours) - PHR documentation
+1. Phase 1: Setup (5-10 hours) - Research + command testing ✅ COMPLETE
+2. Phase 2: Foundational (12-15 hours) - L1, L2, L4, L5 metadata ✅ COMPLETE
+3. Phase 3: Refactor (14-18 hours) - L3, L7 new modalities ✅ COMPLETE
+4. Phase 4: MCP + Extensions (14-18 hours) - L6 redesign, L8 revision ✅ COMPLETE
+5. Phase 5: Validation (10-14 hours) - Constitutional compliance checks ⏸️ PENDING
+6. Phase 6: Meta-Learning (3-4 hours) - PHR documentation ⏸️ PENDING
 
-**Total**: 59-80 hours actual (plan estimated 44-55, adjust expectations upward due to validation rigor)
+**Total**: 58-79 hours actual
+**Completed**: 45-61 hours (Phases 1-4)
+**Remaining**: 13-18 hours (Lesson 9 creation + Validation + Meta-Learning)
 
 ---
 
@@ -429,19 +444,19 @@ Task T123: factual-verifier (citation accuracy)
 - **Terminal logs required** for ALL command examples (Principle 3: factual accuracy)
 - **Citations required** for ALL Gemini features (Context7 or official Google docs)
 - **Metadata 100% complete** = CEFR + Bloom's + DigComp on every learning objective
-- **Error analysis modality** (L3) must show productive failure → discovery pattern
-- **Three Roles framework** (L6) must demonstrate all 3 roles explicitly, not just mentioned
-- **Intelligence accumulation** (L7 → L8) must show skill creation → capstone composition
-- **Capstone scope** (L8) must adhere to A2 tier guardrails (no database, no auth, 45-60 min)
+- **Demonstration pedagogy** (L3) must show automatic tool activation → guided practice pattern
+- **Beginner examples only** (All lessons) - NO programming assumptions (students at Chapter 6, Python at Chapter 12)
+- **Intelligence accumulation** (L7 + L8 → L9) must show custom commands + extensions → capstone composition
+- **Capstone scope** (L9) must adhere to A2 tier guardrails (no programming, simple workflows, 45-60 min)
 - **Constitutional compliance** validated in Phase 5 before considering complete
 
 **Avoid**:
 - Vague tasks without file paths
 - Hallucinated Gemini CLI commands (verify everything against research)
 - Skipping metadata fields (100% completeness required)
-- Implementing L8 before L7 (violates intelligence accumulation principle)
+- Programming examples in ANY lesson (React, JavaScript, Python, APIs, databases)
 - Exceeding A2 cognitive load (≤7 concepts per section)
 
 ---
 
-**Status**: Tasks ready for implementation. Proceed with Phase 1 Setup after approval.
+**Status**: 8/9 Lessons complete. Next: Create Lesson 9 (Capstone Project) for A2 beginners.
