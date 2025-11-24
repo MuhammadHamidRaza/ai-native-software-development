@@ -107,7 +107,13 @@ If missing, install from [nodejs.org](https://nodejs.org/)
 
 ## Step 2: Copy-Paste Setup
 
+⚠️ **Note for Windows Users**:  
+These commands are Bash-specific and will only work on Git Bash, WSL, or Linux/macOS terminal.  
+They will NOT work in Windows CMD or standard PowerShell.  
+Windows users should follow the PowerShell instructions below.
+
 **Just copy commands from this block and paste into terminal:**
+
 
 ```bash
 # Install tools
@@ -245,3 +251,4 @@ That's it. If Claude responds, your free setup is working perfectly.
 
 
 That's it. Proceed to **Lesson 3** to learn persistent project context.
+
